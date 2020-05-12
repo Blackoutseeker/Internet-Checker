@@ -2,6 +2,7 @@ from sys import argv, exit
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel
 from PyQt5.QtCore import Qt
 from socket import gethostbyname, create_connection
+from time import sleep
 
 style_window = """
 QMainWindow {
@@ -74,3 +75,4 @@ while True:
             mem1 = mem2
             window.show()
             exit(App.exec_())
+    sleep(15)
